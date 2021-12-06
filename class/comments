@@ -77,6 +77,7 @@
           $this->username = $dataRow['username'];
           $this->content = $dataRow['content'];
           $this->created = $dataRow['created'];
+
       }
 
       // UPDATE
