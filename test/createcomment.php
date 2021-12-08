@@ -12,6 +12,8 @@
   $content = 'content';
   $created = 'created';
 
+  // bind and execute 
+
   if (!$stmt->bind_param("sss", $username, $content, $created)) {
       echo "binding parameters failed: (" . $stmt->error . ") " . $stmt->error;
   }
@@ -21,42 +23,7 @@
   }
 
 
-  // $sql = "INSERT INTO Comment (username, content, created)
-  // VALUES (?,?,?)";
-
-  // if ($stmt = $conn->prepare($sql)) {
-  // $stmt->bind_param("sss", $username, $content, $created);
-  // //Set parameter values and execute 
-  // // $username = 'username';
-  // // $content = 'content';
-  // // $created = 'created';
-  // $conn->commit();
-  // $stmt->execute();
-
-  //   echo "Comment inserted ";
-  // } else {
-  //   echo $stmt -> error;
-  // };
-
-  // if ($conn->query($sql) === TRUE) {
-  //   echo "New record added";
-  // } else {
-  //   echo "Error: " . $sql . $conn->error;
-  // }
-
   
-
-  // $sql = "INSERT INTO Comment (username, content, created)
-  // VALUES (?,?,?)";
-  
-  // $stmt = $conn->prepare($sql);
-  // $stmt->bind_param("sss", $username, $content, $created);
-  // $stmt->execute();
-  
-  
-  // echo "added";
-  
-
 
 
 ?>
