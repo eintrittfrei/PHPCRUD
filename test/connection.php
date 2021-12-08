@@ -2,8 +2,8 @@
 
 
 $servername = "127.0.0.1";
-$username = "root";
-$password = "AnaSofia";
+$username = "admin";
+$password = "newpassword";
 $dbname = "commentsapidb";
 
 //CREATE Conn

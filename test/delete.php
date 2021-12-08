@@ -16,5 +16,3 @@ include_once '../test/connection.php';
   }
   $conn->close();
   }
-
-?>
