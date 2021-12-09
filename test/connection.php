@@ -1,10 +1,7 @@
 <?php
 
 
-$servername = "127.0.0.1";
-$username = "admin";
-$password = "newpassword";
-$dbname = "commentsapidb";
+include_once '../test/dblogin.php';
 
 //CREATE Conn
 $conn = new mysqli($servername, $username, $password, $dbname);
