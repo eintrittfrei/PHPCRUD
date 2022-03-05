@@ -1,6 +1,5 @@
 <?php 
-header ('Access-Control-Allow-Origin: *');
-header('Content-Type: application/json; charset=UTF-8');
+
 include_once '../test/connection.php';
 
   if (isset($_GET['id'])) {
@@ -16,4 +15,6 @@ include_once '../test/connection.php';
   } else { "error deleting record: " . $conn->error;
   }
   $conn->close();
-  }
+  };
+
+  ?>

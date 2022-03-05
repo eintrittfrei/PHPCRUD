@@ -3,8 +3,13 @@ header ('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json; charset=UTF-8');
 
 
-// connection 
+//connection 
 include_once '../test/connection.php';
+
+// require '../test/database.php';
+
+// $database = new DB();
+// $conn = $database->getConnection();
 
 // prepare and bind 
 
@@ -30,8 +35,8 @@ if ($result->num_rows > 0) {
 
 } else {
   echo "0 results";
-}
-$conn->close()
+};
+$conn->close();
 
 
 ?>
